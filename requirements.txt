@@ -1,0 +1,11 @@
+phidata
+requests 
+groq 
+PyGithub
+openai 
+slack-sdk
+rich
+langchain-google-genai
+#google-generativeai
+langchain
+slack_bolt

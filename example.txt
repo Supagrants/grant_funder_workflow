@@ -1,0 +1,47 @@
+I'll help format this into a clear, structured document suitable for Google Docs. I'll organize it into logical sections with proper spacing and formatting.
+
+# Alterim AI - Funding Application
+
+## Basic Information
+**Company/Project Name:** Alterim AI  
+**Website:** alterim.ai  
+**Country:** South Korea  
+
+## Contact Information
+**Name:** Summer Lee  
+**Email:** summer.lee@alterim.ai  
+**Solana On-Chain Account:** C6d8YFEGf5cvQTQnaQ8WY7i1CLZbPmXvyNwMpgPJvLkw
+
+## Application Details
+**Funding Category:** AI  
+**Requested Amount:** 100,000 USD
+
+## Project Overview
+Alterim AI transforms static NFTs into interactive, evolving AI companions with unique personas. These companions aren't just visual assets — they learn, grow, and provide real utility like personalized conversations, trading tools, and social experiences. Users can mint, trade, and evolve their AI companions for both fun and functional use cases in Web3 ecosystems.
+
+*Note: Presentation available at: https://docs.google.com/presentation/d/1izof-kgfQDUPytC28eC4cXF-kNBbmJh5JSKAI-lftsE/edit?usp=sharing
+
+## Open Source Status
+Parts of the project, such as SDKs or development tools, may be open-sourced to support developer engagement and expand the ecosystem. Core IP, like AI personas and user-customized companions, will be retained for platform growth.
+
+## Budget Breakdown
+1. AI Development - Persona generation, autonomous learning, and chat functionality ($50,000)
+2. Smart Contract Integration - NFT linking, companion minting, and trading ($10,000)
+3. UI/UX Design - User dashboard, companion customization, and storefront ($10,000)
+4. Marketing & Growth - Community engagement, partnership development ($15,000)
+5. Operational Costs - Server, infrastructure, and API usage fees ($15,000)
+
+## Current Metrics
+**Total Companions Created:** 89,531
+
+## Funding Status
+Pre-seed funding of $150,000 from acquaintance. Currently bootstrapped, with initial traction and an early MVP live for testing. Seeking funds to expand Web3 integrations and NFT compatibility.
+
+## Team Qualifications
+The Alterim AI team has proven experience in scaling consumer apps, NFT projects, and Web3 products. Our founder, Summer Lee, was a key contributor to launching successful NFT collections and scaling dApps. This team's track record of taking Web3 concepts from ideation to revenue-generation puts them in a strong position to succeed with Alterim AI.
+
+## Competitive Analysis
+Competitors like Replika and Character.AI provide AI-driven companions but lack on-chain interoperability, NFT customization, and user ownership. Our edge lies in Web3 compatibility, NFT linkage, and custom AI-driven growth. Alterim AI offers users full ownership of their companions and the ability to trade, customize, and co-own them — a competitive differentiator in Web3.
+
+## Public Good Impact
+Alterim AI democratizes AI ownership by giving users control over their AI companions as on-chain, tradeable assets. It provides open access to AI-driven customization, enhances NFT utility, and creates a marketplace for user-generated AI experiences. This empowers NFT creators, developers, and end-users to benefit from collective network effects and decentralized user-driven growth.
