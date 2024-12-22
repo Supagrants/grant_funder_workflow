@@ -99,9 +99,9 @@ if __name__ == "__main__":
 
     #alphakek agents 
 
-    alphakek_data = f"All Data: {json.dumps(processed_data, indent=2)}"
+    alphakek_data = f"{processed_data['market_terms']}"
 
-    alphakek_query =" check the onchain activities of altriem ai "
+    alphakek_query =f" check the market analysis of  {processed_data['project_name']} from the point of view of {alphakek_data} "
 
     alphakek_response = alphakek_agent( "eclipse", alphakek_query)
     alphakek_response = alphakek_response['choices'][0]['message']['content']
