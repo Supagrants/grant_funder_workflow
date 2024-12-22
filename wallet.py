@@ -9,6 +9,9 @@ from solana.rpc.api import Client
 from spl.token.constants import TOKEN_PROGRAM_ID
 from spl.token.instructions import transfer, TransferParams, get_associated_token_address, create_associated_token_account
 import base58
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Constants
 USDC_MINT = Pubkey.from_string("4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU")
