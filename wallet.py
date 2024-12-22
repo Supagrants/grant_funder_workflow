@@ -76,7 +76,7 @@ def create_solana_transaction(sender_address_str, recipient_address_str, amount)
 
         # Create a beautiful message
         message = (
-            f"Transaction ID: {serialized_transaction_str}\n"
+            #f"Transaction ID: {serialized_transaction_str}\n"
             f"Sender Address: {sender_address_str}\n"
             f"Receiver Address: {recipient_address_str}\n"
             f"Amount: {amount / 10**6} USDC"  # Convert to human-readable format
