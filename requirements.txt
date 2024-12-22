@@ -9,3 +9,6 @@ langchain-google-genai
 #google-generativeai
 langchain
 slack_bolt
+solders
+solana 
+base58
