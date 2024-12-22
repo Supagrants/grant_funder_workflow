@@ -21,6 +21,7 @@ from agents.transaction_details_agent import TransactionDetailsAgent
 from agents.summary_agent import SummaryAgent 
 from agents.helper_agent import process_project_data
 from slack_meesage import send_markdown_message
+from wallet import create_solana_transaction
 
 #importing model
 from model import model
@@ -171,12 +172,49 @@ if __name__ == "__main__":
     send_markdown_message(channel, transaction_detail_response)
 
 
+    # agent decides to wheter or not have a transaction 
+
+
 
 
 
 
 
     #intiating tranaction using crossmint wallet 
+
+
+
+
+
+
+
+    # get amount to transfer from transaction_detail_response  
+
+    # get the recipient adress from processed_data
+
+
+
+    sender_address_str = "C45KHyo1T5aSA4F4pXtMUhuhGbxTTHFaZyGXVzU7SHVp"
+    recipient_address_str = "2cfbCMY2PXk4CB7J18abEPTR34TL2sGsjrMGmMyVVMWH"
+    amount_to_transfer = 1 
+    
+
+    # Check if the amount is greater than 
+    
+    if amount_to_transfer > 0:
+        print("Amount is greater than 0. Proceeding with the transaction.")
+        transaction_str = create_solana_transaction(sender_address_str, recipient_address_str, amount_to_transfer)
+        # Further code to process the transaction
+    else:
+        print("Amount must be greater than 0. Transaction not created.")
+        # Handle the invalid transaction scenario
+
+    
+    send_markdown_message(channel, transaction_str)
+0
+
+
+
 
 
 
