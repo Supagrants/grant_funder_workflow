@@ -157,6 +157,7 @@ class ProjectScorer:
         - Weak Value Capture: Unclear path to value accrual
         - Not Crypto Native Team: Limited crypto understanding
         - Team Fraud: Any history of fraudulent behavior
+        do not be so rigid also give score for a good proposal based on what you decide from 10 to 20 points
         """
 
     def analyze_project(self, project_data):
