@@ -211,7 +211,7 @@ if __name__ == "__main__":
 
     
     send_markdown_message(channel, transaction_str)
-0
+
 
 
 
