@@ -12,3 +12,4 @@ slack_bolt
 solders
 solana 
 base58
+flask
