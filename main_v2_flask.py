@@ -107,4 +107,45 @@ def run_script():
         alphakek_response = get_perplexity_search(alphakek_query)
 
         combined_analysis = combine_data_for_scoring(github_response, perplexity_response, alphakek_response)
-        # print(f"Combined analysis:\n{combined_ana
+        print(f"Combined analysis:\n{combined_analysis}\n")  # Print combined analysis
+
+        scorer_response = scorer.analyze_project(combined_analysis)
+        print(f"Scorer response:\n{scorer_response}\n")  # Print scorer response
+
+        deal_memo_prompt = format_deal_memo_input(scorer_response, combined_analysis)
+        print(f"Deal memo prompt:\n{deal_memo_prompt}\n")  # Print deal memo prompt
+        deal_memo_response = deal_memo_agent.deal_memo_agent(deal_memo_prompt)
+        print(f"Deal memo response:\n{deal_memo_response}\n")  # Print deal memo response
+
+        budget = request.form.get("budget", "1000")
+        print(f"Budget: {budget}")  # Print budget for debugging
+        transaction_detail_response = transaction_agent.determine_transaction_details(
+            grant_application=text_content, budget=budget, score=scorer_response)
+        print(f"Transaction details response:\n{transaction_detail_response}\n")  # Print transaction details response
+
+        sender_address_str = "C45KHyo1T5aSA4F4pXtMUhuhGbxTTHFaZyGXVzU7SHVp"
+        recipient_address_str = "2cfbCMY2PXk4CB7J18abEPTR34TL2sGsjrMGmMyVVMWH"
+        amount_to_transfer = 1
+
+        if amount_to_transfer > 0:
+            transaction_str = create_solana_transaction(sender_address_str, recipient_address_str, amount_to_transfer)
+        else:
+            transaction_str = "Amount must be greater than 0. Transaction not created."
+        print(f"Transaction string:\n{transaction_str}\n")  # Print transaction string
+
+        # Send messages to Slack
+        channel = request.form.get("channel", "ai")
+        print(f"Sending to channel: {channel}")  # Print the channel
+        send_markdown_message(channel, deal_memo_response)
+        send_markdown_message(channel, transaction_detail_response)
+        send_markdown_message(channel, transaction_str)
+
+        # Original code ends here
+        return "Script executed successfully. Check Slack for details.", 200
+
+    except Exception as e:
+        return f"An error occurred: {str(e)}", 500
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
